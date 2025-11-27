@@ -1,0 +1,136 @@
+/* ---1. RESET DEFAULTS--- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*TYPE SELECTORS*/
+
+h2 {
+  font-size: 25 px;
+  font-weight: bold;
+  color: #384959;
+}
+
+/*CLASS SELECTORS*/
+
+/*Form section: leave solid background and create space in element's border*/
+.form-section {
+  background-color: white;
+  padding: 15px;
+}
+
+/*Form area: Apply an image only to the form area*/
+.form-area {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://www.activescreening.com/wp-content/uploads/2019/07/about_02-1080x581.jpg");
+  overflow: scroll;
+  text-align: center;
+}
+
+/*to divide the documents area into two columns*/
+.docs {
+  display: flex;
+  align-items: flex-start; /*vertical alignment*/
+  gap: 50px;
+  max-width: 900px; /*if only width then on mobile browsers it overflows*/
+  min-width: 0;
+}
+
+/*to make docs list aligned to the left and under the title*/
+.docs-list {
+  text-align: left;
+}
+
+/*to hide from nav menu the "Documents" option*/
+.menu-docs {
+  visibility: hidden;
+}
+
+/*ID SELECTORS*/
+
+#body {
+  background-color: white;
+  padding: 40px 20px;
+  margin: 25px;
+}
+
+#media {
+  margin-top: 30px;
+}
+
+/*MULTIPLE CLASS SELECTORS*/
+
+/*to underline <p> in the form area without underlying <p> in footer*/
+.line {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+.white {
+  color: whitesmoke;
+}
+
+/*customize padding of quote and docs sections*/
+.spaces {
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 35px;
+  margin-top: 15px;
+}
+
+/*ATTRIBUTE*/
+/*to customize input that is submit type and make it stand out in the form*/
+input[type="submit"] {
+  font-size: 15px;
+  margin: 0 auto; /*to center the input by selecting marging 0*/
+  color: white;
+  background-color: #99bdd3;
+  padding: 16px 32px; /*to make box containing "send" be bigger / more background color shows*/
+  cursor: pointer;
+}
+
+/*PSEUDO-CLASS*/
+/*to highlight required fields boxes when cursor goes over it*/
+input:required:hover {
+  background-color: gold;
+}
+
+/*DESCENDANT COMBINATORS*/
+/*to customize the font contained in <a> which would be the navigation menu*/
+.top-menu a {
+  font-weight: bold;
+  font-size: 17px;
+  color: #58aaf3;
+}
+
+/*to customize IMPORTANT image*/
+.docs img {
+  max-width: 100%; /*to scale on mobile*/
+  max-height: auto;
+  border: 3px dotted #610001;
+  border-radius: 15px;
+  opacity: 0.5;
+}
+
+/*MULTIPLE SELECTORS*/
+
+/*to keep same font type throughout all the website - inline applied for the quote to have a different font*/
+head,
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/*CHAINING*/
+/*to make all h2 titles in the center except Documents required that should be on the left*/
+h2 {
+  text-align: center;
+}
+
+.docs h2 {
+  text-align: left;
+}
