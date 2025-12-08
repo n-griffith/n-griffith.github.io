@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <link href="style.css" rel="stylesheet" />
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Metamorphous&family=Pinyon+Script&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <!--Test page, not added to the nav bar to ensure only access was by clicking review image-->
+
+  <body>
+    <header>
+      <h1>Lila Art Gallery</h1>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">About the Exhibition</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2 style="text-align: center">How was the exhibition?</h2>
+    </main>
+
+    <!--RANGE SLIDER-->
+    <form
+      action="https://formspree.io/f/xeoyzbbb"
+      method="POST"
+      style="text-align: center"
+    >
+      <label for="review">Rate from 1 - 5</label>
+      <br />
+      <input id="review" name="review" type="range" min="1" max="5" step="1" />
+
+      <br />
+      <br />
+
+      <label for="feedback"><h3>Feedback form</h3></label>
+      <br />
+      <textarea
+        id="feedback"
+        name="feedback"
+        rows="6"
+        cols="40"
+        minlength="4"
+        placeholder="Leave us a comment or suggestion!"
+      ></textarea>
+
+      <br />
+      <input type="submit" value="Send" />
+    </form>
+  </body>
+</html>

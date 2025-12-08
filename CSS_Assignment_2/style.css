@@ -1,0 +1,175 @@
+/*Reset browser defaults*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed; /*to make title and nav always visible when scrolling*/
+  background: #999788;
+  z-index: 1000; /*make it visible over other content*/
+  padding: 60px;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style-type: none; /*to remove bullets*/
+}
+
+.navbar a {
+  text-decoration: none; /*to remove underline*/
+  color: hsl(149, 28%, 10%); /*text color for nav text*/
+}
+
+.navbar a:hover {
+  background-color: rgba(
+    95,
+    114,
+    93,
+    0.5
+  ); /*highlight when cursor is over nav text*/
+}
+
+nav a[aria-current="page"] {
+  /* Highlight current page link when aria-current is present */
+  font-weight: 700;
+  color: rgb(46, 75, 54);
+  text-decoration: underline;
+}
+
+.navbar li {
+  display: inline; /*to make list go in one line*/
+}
+
+main {
+  padding-top: 200px; /*to avoid main element to start from under the header*/
+  padding-right: 5px;
+  padding-left: 5px;
+  background: #f3efea;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+footer p {
+  padding: 50px;
+  text-align: center;
+  background: rgba(153, 151, 136, 0.5);
+}
+
+/*Attribute selector to change all images' size*/
+img {
+  width: 300px;
+}
+
+img[src*="portrait"] {
+  display: block;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.flower-collection {
+  padding-top: 50px;
+  padding-bottom: 200px; /*to avoid positioning of images to go in next collection's section*/
+}
+
+.flowers {
+  position: relative; /*to set relative positioning for flower images*/
+}
+
+#flower1 {
+  z-index: 1; /*can be behind other images*/
+  left: 100px;
+}
+
+#flower2 {
+  z-index: 2;
+  right: -65px; /*move towards the right so it doesn't cover too much of flower1*/
+  top: 120px;
+}
+
+#flower3 {
+  z-index: 3;
+  bottom: 15px;
+  left: 25px;
+}
+
+.jungle-collection {
+  position: relative; /*to use div as reference for buffalo image*/
+}
+
+#tigger-attack {
+  padding-top: 300px; /*to lower the image without affecting others so sticky image doesn't cover it*/
+}
+
+#buffalo {
+  position: absolute; /*absolute position from relative div container*/
+  left: 350px;
+}
+
+#snake-charmer {
+  position: sticky; /* to make image scrollable to fixed point*/
+  bottom: 200px;
+}
+
+img[src*="review"] {
+  position: fixed; /*to make image scrollable throught the website, always visible*/
+  top: 200px;
+  right: 5%; /*stay on the right side of the website*/
+  width: 100px;
+  z-index: 500; /*visibility preference over other images*/
+  border-radius: 35%;
+}
+
+.portrait {
+  position: static; /*in their original position*/
+  display: block; /*to  make collection in a block format instead of inline*/
+  width: 300px;
+  height: 400px;
+  padding: 10px;
+}
+
+.town-society {
+  display: inline-block; /*to make two last collections inline block so they are viewed side by side*/
+  width: 400px;
+  height: 400px;
+  padding-top: 20px;
+}
+
+.family-pic {
+  float: right; /*to move first two images towards the right as much as possible*/
+}
+
+h1 {
+  text-transform: uppercase;
+  word-spacing: 0.25em;
+  letter-spacing: 0.075em;
+}
+
+blockquote {
+  color: gray;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  padding: 100px 0px;
+}
+
+main p {
+  line-height: 1.5;
+  text-align: justify;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+h1 {
+  font-family: Metamorphous, "Times New Roman"; /*Google font with fallback option*/
+  color: #403b35;
+}
+
+h2,
+h3 {
+  font-family: "Bilbo Swash Caps", Georgia; /*Google font with fallback option*/
+  color: rgb(79, 71, 59);
+  padding-left: 5px;
+}
