@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Cybersecurity plans offered.">
+    <meta name="author" content="Nicolle Griffith">
+    <title>Nicolle Griffith Portfolio</title>
+    <link href="style.css" rel="stylesheet" />
+    <!--Customized favicon-->
+    <link rel="icon" href="favicon/favicon.ico" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Jersey+10+Charted&family=Jersey+25+Charted&family=Sixtyfour&family=Tektur:wght@400..900&family=Workbench&display=swap"
+        rel="stylesheet">
+
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+    <!-- Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+
+    <!--WEBSITE TITLE: align vertically, 10% of viewport height from bottom-->
+    <header class="title-section d-flex justify-content-center align-items-end"
+        style="min-height: 90 vh; padding-bottom: 10vh;">
+        <div class="container text-center">
+            <h1 class="display-1">CyberSecurity by Nicolle Griffith</h1>
+        </div>
+    </header>
+
+    <!--NAV BAR: toggle option for responsive collapsing, navbar items are displayed if breakpoint is medium or larger-->
+    <nav class="navbar navbar-expand-md sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-5" href="#contact"><img src="Images/ng-icon.png" alt="Logo" class="img-fluid"
+                    style="width: 50px;" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Center navbar items-->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <!--Horizontal margin increases when breakpoint does-->
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mx-md-1 mx-lg-3 mx-xl-5" href="index.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html#about-me">About me</a></li>
+                            <li>
+                                <a class="dropdown-item" href="index.html#experience">Experience</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="index.html#skills">Skills</a></li>
+                            <li><a class="dropdown-item" href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link mx-md-1 mx-lg-3 mx-xl-5 " href="services.html"
+                            aria-current="page">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-md-1 mx-lg-3 mx-xl-5" href="blog.html">News</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!---Plans Title and description-->
+        <div class="p-3 pb-md-4 mx-auto text-center">
+            <h2 class="display-4 fw-bold">Plans</h2>
+            <p class="fs-4 text-body-secondary">Choose the right cybersecurity plan for your website or application.
+                From basic scans to full-scale monitoring, we help keep your projects safe.</p>
+        </div>
+
+        <div class="container">
+            <!--Plans offering: 1 column per row on sm screens, 3 columns on md o larger-->
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center g-4">
+                <div class="col">
+                    <!--Bottom margin, rounded border, shadow and h-100 to keep equal height in cards-->
+                    <div class="card mb-4 rounded-3 shadow-sm h-100">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Basic</h4>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">$29<small
+                                    class="text-body-secondary fw-light">/mo</small></h3>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Biweekly security report</li>
+                                <li>Email support (48 h)</li>
+                                <li>Basic vulnerability scan</li>
+                            </ul> <button type="button" class="w-100 btn btn-lg btn-outline-success">Get Basic</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm h-100">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Pro</h4>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">$79<small
+                                    class="text-body-secondary fw-light">/mo</small></h3>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Monthly detailed security report</li>
+                                <li>Priority email support</li>
+                                <li>Full vulnerability scan</li>
+                            </ul> <button type="button" class="w-100 btn btn-lg btn-success">Get Pro</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-success h-100">
+                        <div class="card-header py-3 text-bg-success border-success">
+                            <h4 class="my-0 fw-normal">VIP</h4>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">$149<small
+                                    class="text-body-secondary fw-light">/mo</small></h3>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Quarterly security audit</li>
+                                <li>Phone + email support</li>
+                                <li>24/7 threat alerts</li>
+                            </ul> <button type="button" class="w-100 btn btn-lg btn-success">Contact us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Compare plans-->
+        <div class="container pb-5">
+            <h4 class="text-center mt-5 mb-3">Compare plans</h4>
+
+            <!--Comparing table: responsive-->
+            <div class="table-responsive-md">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Feature</th>
+                            <th scope="col">Basic</th>
+                            <th scope="col">Pro</th>
+                            <th scope="col">VIP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Vulnerability Scan</th>
+                            <td>✔</td>
+                            <td>✔</td>
+                            <td>✔</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Penetration Testing</th>
+                            <td>❌</td>
+                            <td>✔</td>
+                            <td>✔</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Security Audit</th>
+                            <td>❌</td>
+                            <td>✔</td>
+                            <td>✔</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">24/7 monitoring</th>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>✔</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Support response</th>
+                            <td>48h email</td>
+                            <td>24h email</td>
+                            <td>24/7 phone & email</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Websites Supported</th>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4 class="text-center mt-5">Need a customize plan?</h4>
+            <p class="text-center">If our standard plans don’t quite fit your needs, we can create a custom
+                cybersecurity solution tailored just for you. Click the link below to tell us what you need. <br>
+                <a href="index.html#contact">Send us an email</a>
+            </p>
+        </div>
+
+
+
+
+    </main>
+
+
+
+    <!--FOOTER-->
+    <footer class="py-3">
+        <div class="container-fluid">
+            <!--SOCIALS ON FIRST COLUMN-->
+            <div class="row offset-2 my-3">
+                <div class="col-3">
+                    <p class="fs-6">Let's connect!</p>
+                    <a href="https://www.linkedin.com/in/nicolle-griffith-a07264156/" class="fa fa-linkedin"></a>
+                    <a href="https://www.youtube.com/@NicolleGriffith" class="fa fa-youtube"></a>
+                </div>
+
+                <!--MENU ON SECOND COLUMN-->
+                <div class="col-4">
+                    <ul class="float-center footer-menu">
+                        <h4>Menu</h4>
+                        <li><a href="index.html">About Me</a></li>
+                        <li><a href="services.html" aria-current="page">Services</a></li>
+                        <li><a href="blog.html">News</a></li>
+                    </ul>
+                </div>
+
+                <!--LOGO ON THIRD COLUMN-->
+                <div class="col-3">
+                    <img class="rounded float-end ng-logo" src="Images/ng-icon.png" alt="NG logo" />
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <p class="fs-6 text-center">
+                © 2025 Nicolle Griffith. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
