@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Important news about cybersecurity incidents.">
+    <meta name="author" content="Nicolle Griffith">
+    <title>Nicolle Griffith Portfolio</title>
+    <link href="style.css" rel="stylesheet" />
+    <!--Customized favicon-->
+    <link rel="icon" href="favicon/favicon.ico" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Jersey+10+Charted&family=Jersey+25+Charted&family=Sixtyfour&family=Tektur:wght@400..900&family=Workbench&display=swap"
+        rel="stylesheet">
+
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+    <!-- Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+
+    <!--WEBSITE TITLE: align vertically, 10% of viewport height from bottom-->
+    <header class="title-section d-flex justify-content-center align-items-end"
+        style="min-height: 90 vh; padding-bottom: 10vh;">
+        <div class="container text-center">
+            <h1 class="display-1">CyberSecurity by Nicolle Griffith</h1>
+        </div>
+    </header>
+
+    <!--NAV BAR: toggle option for responsive collapsing, navbar items are displayed if breakpoint is medium or larger-->
+    <nav class="navbar navbar-expand-md sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-5" href="#contact"><img src="Images/ng-icon.png" alt="Logo" class="img-fluid"
+                    style="width: 50px;" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Center navbar items-->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <!--Horizontal margin increases when breakpoint does-->
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mx-md-1 mx-lg-3 mx-xl-5" href="index.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html#about-me">About me</a></li>
+                            <li>
+                                <a class="dropdown-item" href="index.html#experience">Experience</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="index.html#skills">Skills</a></li>
+                            <li><a class="dropdown-item" href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link mx-md-1 mx-lg-3 mx-xl-5" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-md-1 mx-lg-3 mx-xl-5" href="blog.html" aria-current="page">News</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--News Section-->
+    <main>
+        <div class="container">
+            <!--Main News from Other Website Dark Background-->
+            <div class="row p-4 mb-4 mt-5 text-white bg-dark rounded g-5">
+                <!--Image of news take half of width when breakpoint is lg or larger-->
+                <div class="col-lg-6">
+                    <img src="Images/Cisco-altert.jpg" class="img-fluid" alt="Cisco 0-day vulnerability">
+                </div>
+
+                <!--Text of news take half of width when breakpoint is lg or larger-->
+                <!--H2 font style, Paragraph stands out with lead, white text for visibility-->
+                <div class="col-lg-6 px-0">
+                    <h2 class="display-4 fst-italic">Active Attacks Exploiting Unpatched 0-Day</h2>
+                    <p class="lead my-3">Cisco has alerted users to a maximum-severity zero-day flaw in Cisco AsyncOS
+                        software that has been actively exploited by a China-nexus advanced persistent threat (APT)
+                        actor
+                        codenamed UAT-9686 in attacks targeting Cisco Secure Email Gateway and Cisco Secure Email and
+                        Web
+                        Manager. The networking equipment major said it became aware of the intrusion campaign on
+                        December
+                        10, 2025, and that it has singled out a "limited subset of appliances" with certain ports open
+                        to
+                        the internet. It's currently not known how many customers are affected.</p>
+                    <p class="lead mb-0">
+                        <a href="https://thehackernews.com/2025/12/cisco-warns-of-active-attacks.html"
+                            class="text-white fw-bold" target="_blank">Read more on The Hacker News...</a>
+                    </p>
+                </div>
+            </div>
+
+
+            <!--4 News from Other Websites-->
+
+            <div class="row mb-2">
+                <!--2 news total width if screen is md / 4 news total width if screen is lg or larger / d-flex to keep same height-->
+                <div class="col-md-6 col-lg-3 d-flex">
+                    <!--News from Reuters-->
+                    <!-- Flex container (column) so mb-auto can push the link to the bottom / round borders / bottom margin-->
+                    <div class="d-flex flex-column border rounded mb-4 p-4">
+                        <h3>Arrested Suspect for cyberattack in France</h3>
+                        <p class="card-text mb-auto">A 22-year old man has been arrested after an earlier cyberattack on
+                            the French Interior Ministry's Email servers, which affected more than 20 files including
+                            those with criminal records.</p>
+                        <p class="mb-0 text-center">
+                            <a href="https://www.reuters.com/world/cyberattack-french-interior-ministrys-email-servers-compromised-more-than-20-2025-12-17/"
+                                class="news-link" target="_blank">Read more on Reuters...</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!--News from CyberScoop-->
+                <div class="col-md-6 col-lg-3 d-flex">
+                    <div class="d-flex flex-column border rounded mb-4 p-4">
+                        <h3>AI causing problems in the legal sector</h3>
+                        <p class="card-text mb-auto">The American Bar Association believes the use of artificial
+                            intelligence in the legal sector is eroding key procedures, documentary records and
+                            evidence relied on to establish ground-level truth in the court system.</p>
+                        <p class="mb-0 text-center">
+                            <a href="https://cyberscoop.com/ai-deepfakes-causing-big-problems-in-the-legal-sector-aba-report/"
+                                class="news-link" target="_blank">Read more on CyberScoop...</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!--News from SecurityWeek-->
+                <div class="col-md-6 col-lg-3 d-flex">
+                    <div class="d-flex flex-column border rounded mb-4 p-4">
+                        <h3>CISO Communities</h3>
+                        <p class="card-text mb-auto">In recent years, closed CISO communities have increased in number
+                            and grown in size. They act as an information exchange, advice center, pressure valve, and
+                            safe haven from the critical oversight.
+
+                            The need is obvious. CISOs occupy a unique position in business. Despite greater integration
+                            with business operations, they remain the only business leaders trying to counter active and
+                            adaptive threats; and yet they remain a role that is little understood by the rest of the
+                            business.</p>
+                        <p class="mb-0 text-center">
+                            <a href="https://www.securityweek.com/ciso-communities-cybersecuritys-secret-weapon/"
+                                class="news-link" target="_blank">Read more on SecurityWeek...</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!--News from CyberSecurity Dive-->
+                <div class="col-md-6 col-lg-3 d-flex">
+                    <div class="d-flex flex-column border rounded mb-4 p-4">
+                        <h3>FortiGate devices targeted with malicious SSO logins</h3>
+                        <p class="card-text mb-auto">The threat activity comes about a week after Fortinet disclosed two
+                            critical authentication bypass vulnerabilities in multiple products. Fortinet said the flaws
+                            were originally discovered by two members of its product security team.
+                            The flaws, tracked as CVE-2025-59718 and CVE-2025-59719, allow an attacker to bypass the
+                            FortiCloud SSO authentication using a crafted SAML message if the feature is enabled on the
+                            device.</p>
+                        <p class="mb-0 text-center">
+                            <a href="https://www.cybersecuritydive.com/news/fortigate-devices-targeted-with-malicious-sso-logins/808132/"
+                                class="news-link" target="_blank">Read more on CyberSecurity Dive...</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Blog posts 2025 & 2026 / Best CyberSecurity Practices-->
+
+            <div class="row g-5">
+                <!--Left column: when reaching md breakpoint use 8 cols of width-->
+                <div class="col-md-8">
+                    <!--2025 Incidents-->
+                    <article class="my-5">
+                        <h2>Cybersecurity Breaches and Incidents in 2025: A Snapshot</h2>
+                        <p> Cybersecurity incidents in 2025 continue to highlight how vulnerable organizations remain
+                            despite increased awareness and investment in security tools. From large-scale data breaches
+                            to
+                            ransomware attacks on critical infrastructure, threat actors are exploiting unpatched
+                            systems,
+                            weak credentials, and supply-chain dependencies at an alarming rate.
+
+                            One of the most notable trends this year is the continued rise in ransomware attacks,
+                            particularly against healthcare providers, government agencies, and small-to-medium
+                            enterprises.
+                            These incidents often result not only in data theft, but also in operational downtime that
+                            can
+                            last days or even weeks. At the same time, data breaches affecting millions of users remain
+                            common, driven by misconfigured cloud services and credential-based attacks.
+
+                            Phishing and social engineering campaigns have also become more sophisticated, frequently
+                            leveraging AI-generated content to bypass traditional detection methods. Combined with an
+                            ever-growing number of disclosed vulnerabilities, the overall threat landscape in 2025 shows
+                            that cybersecurity risks are both persistent and evolving.
+
+                            The table below provides a high-level overview of major cybersecurity incident categories
+                            reported in 2025 so far.
+                        </p>
+                        <h3>Cybersecurity Incidents in 2025 (Reported / Estimated)</h3>
+
+                        <div class="table-responsive-md">
+                            <table class="table">
+                                <!--Table Header-->
+                                <thead>
+                                    <tr>
+                                        <th>Category</th>
+                                        <th>Estimated</th>
+                                        <th>Targets</th>
+                                        <th>Common Impact</th>
+                                    </tr>
+                                </thead>
+                                <!--Table Content-->
+                                <tbody>
+                                    <tr>
+                                        <td>Data Breaches</td>
+                                        <td>6000+</td>
+                                        <td>Enterprises, SaaS platforms</td>
+                                        <td>Exposure of personal and login data</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ransomware Attacks</td>
+                                        <td>3500+</td>
+                                        <td>Healthcare, government, SMBs</td>
+                                        <td>Service disruption, data encryption</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phishing & Social Engineering</td>
+                                        <td>1M+ campaigns</td>
+                                        <td>Individuals, employees</td>
+                                        <td>Credential theft, account compromise</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Exploited Vulnerabilities</td>
+                                        <td>22,000+ CVEs</td>
+                                        <td>Public-facing systems</td>
+                                        <td>Unauthorized access, data leaks</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </article>
+
+                    <!--2026 Predictions-->
+                    <article class="my-5">
+                        <h2>Cybersecurity Predictions for 2026: What’s on the Horizon</h2>
+                        <p>
+                            As we approach 2026, the cybersecurity landscape continues to evolve at breakneck speed. The
+                            threats
+                            we face are not static — they shift with technology trends, geopolitical tensions, and
+                            changes
+                            in
+                            how organizations and individuals interact online. Looking ahead, a few key patterns are
+                            starting to
+                            emerge that are likely to shape the future of digital defense and offense alike. Below are
+                            some
+                            of
+                            the most compelling predictions for cybersecurity in 2026.
+                        </p>
+                        <h3>1. Ransomware Becomes Even More Targeted and Strategic</h3>
+                        <p>
+                            Ransomware has already caused widespread disruption, but in 2026 we expect attacks to become
+                            even more strategic rather than indiscriminate. Rather than blasting every victim they can
+                            find,
+                            attackers will increasingly focus on specific high-value sectors such as healthcare,
+                            critical
+                            infrastructure, and key supply chains. These attacks won’t just encrypt data — they will
+                            also
+                            exploit operational dependencies to increase leverage and demand higher payouts.
+
+                            Organizations will need to evolve beyond traditional backups, investing in real-time
+                            monitoring,
+                            segmented networks, and proactive threat hunting to stay ahead of these threats.
+                        </p>
+                        <h3>2. AI-Powered Cyberattacks Rise Sharply</h3>
+                        <p>Artificial Intelligence (AI) is a double-edged sword. On the defense side, AI helps detect
+                            threats faster than ever. But in 2026, attackers will increasingly weaponize AI to automate
+                            exploit discovery, evade defenses, and conduct highly convincing deepfake phishing
+                            campaigns.
+                            Attackers may use generative models to tailor malware that adapts to specific environments
+                            or
+                            user behavior, making traditional signature-based defenses less effective.
+
+                            Cybersecurity teams will need AI-driven tools of their own, along with rigorous ethical
+                            frameworks, to counter AI-enhanced threats.</p>
+                        <h3>Cybersecurity Talent Shortage Drives Automation and New Learning Models</h3>
+                        <p>
+                            The global demand for skilled cybersecurity professionals already outstrips supply, and this
+                            gap
+                            will continue into 2026. To compensate, companies will rely more on automation tools,
+                            AI-assisted incident response, and low-code/no-code security solutions that empower general
+                            IT
+                            staff to handle complex tasks.
+
+                            Training and certification programs will also evolve. Expect more practical, scenario-based
+                            learning that closes the skills gap faster and aligns with real-world threat hunting and
+                            incident response needs.
+                        </p>
+                    </article>
+
+                </div>
+
+                <!--Right column: when reaching md breakpoint use 4 cols of width / vertical padding-->
+                <div class="col-md-4 py-5">
+                    <!--Make element visible when scrolling / 7 rem from the top-->
+                    <div class="position-sticky" style="top: 7rem;">
+                        <h4 class="fst-italic">Best CyberSecurity Practices</h4>
+                        <ul class="mb-0">
+                            <li><a href="https://www.nist.gov/blogs/cybersecurity-insights/cybersecurity-awareness-month-be-cyber-smart"
+                                    target="_blank">Use
+                                    strong, unique passwords</a></li>
+                            <li><a href="https://www.cisa.gov/topics/cybersecurity-best-practices/multifactor-authentication/"
+                                    target="_blank">Enable
+                                    Multi-Factor Authentication</a></li>
+                            <li><a href="https://www.rapid7.com/fundamentals/patch-management/" target="_blank">Keep
+                                    Software Up to
+                                    Date</a></li>
+                            <li><a href="https://www.cisa.gov/resources-tools/resources/four-cybersecurity-essentials-businesses/"
+                                    target="_blank">Train
+                                    and Educate Users</a></li>
+                            <li><a href="https://www.connectwise.com/blog/endpoint-protection-strategies"
+                                    target="_blank">Use Endpoint
+                                    Protection</a></li>
+                            <li><a href="https://www.rippling.com/blog/how-to-protect-your-small-business-cybersecurity-best-practices"
+                                    target="_blank">Implement
+                                    Least Privilege and Access Controls</a></li>
+                            <li><a href="https://www.cisa.gov/audiences/small-and-medium-businesses/secure-your-business/back-up-business-data"
+                                    target="_blank">Backup
+                                    Important Data Frequently</a></li>
+                            <li><a href="https://www.cyber.gc.ca/en/guidance/cyber-security-hygiene-best-practices-your-organization-itsap10102"
+                                    target="_blank">Monitor
+                                    and Audit Activity</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="py-3">
+        <div class="container-fluid">
+            <!--SOCIALS ON FIRST COLUMN-->
+            <div class="row offset-2 my-3">
+                <div class="col-3">
+                    <p class="fs-6">Let's connect!</p>
+                    <a href="https://www.linkedin.com/in/nicolle-griffith-a07264156/" class="fa fa-linkedin"
+                        aria-label="LinkedIn profile"></a>
+                    <a href="https://www.youtube.com/@NicolleGriffith" class="fa fa-youtube"
+                        aria-label="YouTube channel"></a>
+                </div>
+
+                <!--MENU ON SECOND COLUMN-->
+                <div class="col-4">
+                    <p class="fw-bold">Menu</p>
+                    <ul class="float-center footer-menu">
+                        <li><a href="index.html">About Me</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html" aria-current="page">News</a></li>
+                    </ul>
+                </div>
+
+                <!--LOGO ON THIRD COLUMN-->
+                <div class="col-sm-3">
+                    <img class="rounded float-end ng-logo" src="Images/ng-icon.png" alt="NG logo" />
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <p class="fs-6 text-center">
+                © 2025 Nicolle Griffith. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
